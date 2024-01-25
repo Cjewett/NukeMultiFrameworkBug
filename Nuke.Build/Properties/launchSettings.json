@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ContinuousIntegration": {
+      "commandName": "Project",
+      "commandLineArgs": "--verbosity Verbose --root ./"
+    }
+  }
+}

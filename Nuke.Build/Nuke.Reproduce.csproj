@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>Nuke.Reproduce</ToolCommandName>
+    <NoWarn>$(NoWarn);CS0649</NoWarn>
+    <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+    <NukeTelemetryVersion>1</NukeTelemetryVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageDownload Include="ReportGenerator" Version="[5.2.0]" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nuke.Common" Version="8.0.0" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+  </ItemGroup>
+
+</Project>
